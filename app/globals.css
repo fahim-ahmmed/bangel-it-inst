@@ -1,0 +1,73 @@
+@import "tailwindcss";
+@import "@heroui/styles";
+
+@theme {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface2: var(--surface2);
+  --color-line: var(--line);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-brand: var(--brand);
+  --color-brand-fg: var(--brand-fg);
+  --color-accent: var(--accent);
+  --font-sans: var(--font-hind), system-ui, sans-serif;
+
+  /* Brand palette: emerald -> logo green (#2F9606), teal & sky -> logo orange (#FF6600) */
+  --color-emerald-50: #f2fced;
+  --color-emerald-100: #e4f9dc;
+  --color-emerald-200: #caf4b9;
+  --color-emerald-300: #a1eb84;
+  --color-emerald-400: #79e250;
+  --color-emerald-500: #2f9606;
+  --color-emerald-600: #288005;
+  --color-emerald-700: #216904;
+  --color-emerald-800: #1a5203;
+  --color-emerald-900: #143f03;
+  --color-emerald-950: #0d2a02;
+  --color-teal-50: #fdf3ed;
+  --color-teal-100: #fbe7db;
+  --color-teal-200: #f6d0b6;
+  --color-teal-300: #efac80;
+  --color-teal-400: #e98949;
+  --color-teal-500: #ff6600;
+  --color-teal-600: #d95700;
+  --color-teal-700: #b24700;
+  --color-teal-800: #8c3800;
+  --color-teal-900: #6b2b00;
+  --color-teal-950: #471d00;
+  --color-sky-50: #fdf3ed;
+  --color-sky-100: #fbe7db;
+  --color-sky-200: #f6d0b6;
+  --color-sky-300: #efac80;
+  --color-sky-400: #e98949;
+  --color-sky-500: #ff6600;
+  --color-sky-600: #d95700;
+  --color-sky-700: #b24700;
+  --color-sky-800: #8c3800;
+  --color-sky-900: #6b2b00;
+  --color-sky-950: #471d00;
+}
+
+:root {
+  --bg: #020617; --surface: #0f172a; --surface2: #1e293b; --line: #1e293b;
+  --fg: #f1f5f9; --muted: #94a3b8; --brand: #4cb81a; --brand-fg: #04210a; --accent: #ff6600;
+}
+html.light {
+  --bg: #f8fafc; --surface: #ffffff; --surface2: #f1f5f9; --line: #e2e8f0;
+  --fg: #0f172a; --muted: #475569; --brand: #2f9606; --brand-fg: #ffffff; --accent: #e65c00;
+}
+html { scroll-behavior: smooth; }
+body { background: var(--bg); color: var(--fg); font-family: var(--font-hind), system-ui, sans-serif; overflow-x: hidden; }
+img { max-width: 100%; }
+
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.animate-marquee { display: inline-flex; white-space: nowrap; animation: marquee 35s linear infinite; }
+.animate-marquee:hover { animation-play-state: paused; }
+
+/* Readable accents on the light theme */
+html.light .text-emerald-300, html.light .text-emerald-400 { color: #277f05; }
+html.light .text-amber-400, html.light .text-amber-300 { color: #b45309; }
+html.light .text-sky-400, html.light .text-sky-300 { color: #c2410c; }
+html.light .text-rose-400 { color: #be123c; }
+html.light .bg-black\/50 .text-emerald-400, html.light .from-emerald-950 .text-emerald-400 { color: #7ed957; }

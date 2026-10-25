@@ -1,0 +1,7 @@
+// Seed records used as fallback when the MongoDB `certificates` collection has no match.
+export const SEED_CERTIFICATES = [
+  { certificateNo: 'BCTI-2024-101', studentName: 'মোঃ তানভীর আহমেদ', fatherName: 'মোঃ আব্দুল খালেক', courseName: 'কম্পিউটার অফিস অ্যাপ্লিকেশন (৬ মাস মেয়াদী)', rollNo: '482910', regNo: '191028374', session: 'জানুয়ারি - জুন ২০২৪', grade: 'A+', cgpa: '4.00 (A+)', issueDate: '১৫ জুলাই, ২০২৪', instituteCode: '27117' },
+  { certificateNo: 'BCTI-2025-248', studentName: 'মোছাঃ নুসরাত জাহান রিমা', fatherName: 'মোঃ রফিকুল ইসলাম', courseName: 'কম্পিউটার প্রশিক্ষণ এআই ও ফ্রিল্যান্সিং কোর্স', rollNo: '519022', regNo: '202319482', session: 'জুলাই - ডিসেম্বর ২০২৪', grade: 'A+', cgpa: '4.00 (A+)', issueDate: '১০ জানুয়ারি, ২০২৫', instituteCode: '27117' },
+  { certificateNo: 'BCTI-2026-007', studentName: 'সাব্বির হোসেন শুভ', fatherName: 'মোঃ আক্তারুজ্জামান', courseName: 'প্রফেশনাল গ্রাফিক ডিজাইন ও ফ্রিল্যান্সিং', rollNo: '538104', regNo: '202491823', session: 'অক্টোবর ২০২৫ - মার্চ ২০২৬', grade: 'A+', cgpa: '3.95 (A+)', issueDate: '১৮ এপ্রিল, ২০২৬', instituteCode: '27117' },
+  { certificateNo: 'BTEB-27117-092', studentName: 'ফারজানা আক্তার মিতু', fatherName: 'মোঃ শফিকুল ইসলাম', courseName: 'এইচএসসি আইসিটি স্পেশাল ও ওয়েব প্রোগ্রামিং', rollNo: '592019', regNo: '202509182', session: '২০২৫-২০২৬', grade: 'A+', cgpa: '5.00 (GPA 5)', issueDate: '১ মে, ২০২৬', instituteCode: '27117' },
+];
